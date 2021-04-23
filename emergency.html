@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  body
+    {
+      background: url('https://thumbs.gfycat.com/ShoddyQualifiedIguanodon-small.gif');
+      
+       background-repeat: no-repeat;
+    
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+table{
+      max-width: 750px;
+      border-radius: 50px;
+      margin: auto;
+      background:rgb(212,230,241);
+      opacity: 0.6;
+      box-sizing: border-box;
+      padding: 50px;
+      color:black;
+      margin-top: 100px;
+    }
+
+  th
+  {
+    font-family: sans-serif;
+  }
+  
+  
+
+  </style>
+  
+</head>
+<body>
+  
+ <h1 align="center"  style="color:white;font-size:50px"><b>Emergency Registration form</b></h1>   
+ <form method="post" action="emergency.php">
+<table border="2" align="center" width="700" bgcolor="skyblue">
+
+<tr>
+<th><b>Enter cop name</b></th>
+<td><input type="text" name="Cop_name" id="fn1" maxlength="200" title="enter your first name" placeholder="enter cop name" required/></td>
+</tr>
+
+
+<tr>
+<th><b>Enter cop mobile</b></th>
+<td><input type="number" name="Cop_mobile" /></td>
+</tr>
+<tr>
+<th><b>Enter location</th>
+<td><textarea rows="5" cols="40" name="Location"></textarea></td>
+</tr>
+
+
+<tr>
+<th><b>Accident type</th>
+<td>
+<b>Two wheeler<input type="radio" value="Two wheeler" name="Accident_type" />
+<b>Four wheeler<input type="radio" value="Four wheeler" name="Accident_type" />
+
+</td>
+</tr>
+<tr>
+<th><b>Select your Priority</th>
+<td>
+<select name="Priority" required>
+<option value="" selected="selected" disabled="disabled">--Select--</option>
+<option value="High">High</option>
+<option value="Low">Low</option>
+<option value="Very low">Very low</option>
+</td>
+
+</tr>
+
+<tr>
+<th><b>No of people affected</th>
+<td>
+  <select name="no_of_people_affected" required>
+<option value="" selected="selected" disabled="disabled">--Select Violation type--</option>
+<option value="1-affected">1</option>
+<option value="2-affected">2</option>
+<option value="3-affected">3</option>
+
+<option value="4-affected">4</option>
+
+<option value="5-affected">5</option>
+<option value="More than 5">More than 5</option>
+
+<option value="More than 15">More than 15</option>
+<option value="More than 25">More than 25</option>
+<option value="More than 50">More than 50</option>
+
+
+
+
+</select>
+
+
+
+
+
+</td>
+</tr>
+
+<tr>
+
+<td colspan="2" align="center"> <br>
+  <br><b><input type="submit"  value="SEND MY DATA"></b>
+
+
+</td>
+</tr>
+
+
+</body>
+</html>

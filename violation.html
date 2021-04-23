@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<title>Page Title</title>
+<style>
+  body
+    {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRHxWFNbHeMg_BgzKqwo-mwKZWZgg2RnZ_Jw&usqp=CAU');
+        background-repeat: no-repeat;
+    
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    th
+  {
+    font-family: sans-serif;
+
+  }
+    table{
+      max-width: 750px;
+      border-radius: 50px;
+      margin: auto;
+      background:rgb(212,230,241);;
+      opacity: 0.6;
+      box-sizing: border-box;
+      padding: 50px;
+      color:black;
+      margin-top: 30px;
+    }
+   
+
+    
+  </style>
+</head>
+<body>
+  <h1 align="center"  style="color:white;font-size:50px"><b>Violators Registration form</b></h1>
+ <form method="post" action="violation.php">
+<table border="1" align="center" width="800" bgcolor="black" >
+<tr>
+<th>Enter  name</th>
+<td><input type="text" name="Name"  maxlength="200" title="enter your name" placeholder="Enter Violator's name..." required/></td>
+</tr>
+
+<tr>
+<th>Enter violators mobile</th>
+<td><input type="number" name="Mobile" /></td>
+</tr>
+
+<tr>
+<th>Select your gender</th>
+
+<td>
+Male<input type="radio"  value="male" name="Gender" />
+Female<input type="radio" value="female"name="Gender" />
+Others<input type="radio" value="Others"name="Gender" />
+
+</td>
+</tr>
+<th>Violation type</th>
+<td>
+<select name="Violation_type">
+<option value="" selected="selected" disabled="disabled">Select Violation type</option>
+<option value="Drunk driving/riding">Drunk driving/riding</option>
+<option value="General traffic rule violations">General traffic rule violations</option>
+<option value="Violations of road rules and regulations">Violations of road rules and regulations</option>
+<option value="Travelling without tickets">Travelling without tickets</option>
+<option value="Driving vehicle without valid registration certificate">Driving vehicle without valid registration certificate</option>
+<option value="Disobeying orders of traffic police">Disobeying orders of traffic police</option>
+<option value="Driving/riding without licence">Driving/riding without licence</option>
+<option value="Driving vehicles after cancellation of Drivers License">Driving vehicles after cancellation of Drivers License</option>
+<option value="Driving an oversized vehicle">Driving an oversized vehicle</option>
+<option value="Riding without a helmet">Riding without a helmet</option>
+<option value="Driving without insurance">Driving without insurance</option>
+<option value="Rash and negligent driving">Rash and negligent driving</option>
+<option value="Over-boarding on 2 wheelers">Over-boarding on 2 wheelers</option>
+<option value="Violations by juveniles">Violations by juveniles</option>
+<option value="Driving without seat-belts">Driving without seat-belts</option>
+<option value="Violating license conditions">Violating license conditions</option>
+<option value="Driving without a valid permit">Driving without a valid permit</option>
+<option value="Excessive over-speeding">Excessive over-speeding</option>
+<option value="Driving in a No Entry zone.">Driving in a No Entry zone.</option>
+<option value="Disobeying instruction of the authorities">Disobeying instruction of the authorities</option>
+<option value="Driving in a pedestrian zone">Driving in a pedestrian zone</option>
+<option value="Using fuel which is illegal or harmful (kerosene and other cheaper substitutes)">Using fuel which is illegal or harmful (kerosene and other cheaper substitutes)</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>Vehicle Details</th>
+<td>
+  <select name="Vehicle_details">
+<option value="" selected="selected" disabled="disabled">--Select--</option>
+<option value="Car">Car</option>
+<option value="Lorry">Lorry</option>
+<option value="Bus">Bus</option>
+<option value="Bike">Bike</option>
+</select>
+</td>
+
+</tr>
+<tr>
+<th>License number</th>
+<td><input type="text" name="License_num" maxlength="200"  placeholder="Enter violator's DL no" required/></td>
+</tr>
+<tr>
+<th>Enter  color of the vehicle</th>
+<td><input type="color"  name="veh_color" value="#ff0000"><br><br></td>
+</tr>
+<tr>
+<th>Vehicle property</th>
+<td>
+Private vehicle<input type="radio" name="veh_property" value="Private vehicle"/>
+Taxi<input type="radio" name= "veh_property"value="Taxi"/>
+Government Vehicle<input type="radio" name="veh_property" value="Government Vehicle"/>
+</td>
+</tr>
+<tr>
+<th>Violation (date and time):</th>
+<td>
+  <input type="datetime-local"  name="Date_time">
+</td>
+</tr>
+
+<tr>
+<th>Enter Location</th>
+<td><textarea rows="5" cols="40" name="Location"></textarea></td>
+</tr>
+<tr>
+<th>Enter Fine amount</th>
+<td><input type="number" name="Fine_amount" /></td>
+</tr>
+<th>Enter Ticket number</th>
+<td><input type="number" name="Ticket_no" /></td>
+</tr>
+
+
+
+
+<tr>
+<td colspan="2" align="center"><input type="submit" value="Save My Data">
+
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
